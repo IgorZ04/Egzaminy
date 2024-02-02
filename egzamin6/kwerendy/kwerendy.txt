@@ -1,0 +1,7 @@
+kw1: INSERT INTO `odpowiedzi`(`id`, `Pytania_id`, `konta_id`, `odpowiedz`) VALUES ('','5','1','Przyda Ci się także wysoki stół, na którym postawisz pieska.')
+
+kw2: SELECT `nick`, year(CURRENT_DATE) - rejestracja AS 'latNaForum' FROM konta WHERE `nick`='Jacek' OR `nick` = "Tomek" OR `nick` = 'Monika'; 
+
+kw3: SELECT `nick`, `postow`, `pytanie` FROM `konta` JOIN `pytania` WHERE `konta`.`id` = `pytania`.`konta_id`; 
+
+kw4: SELECT `odpowiedzi`.`id`, `odpowiedzi`.`odpowiedz`, `konta`.`nick` FROM `odpowiedzi` JOIN `konta` WHERE `konta`.`id` = `odpowiedzi`.`konta_id` AND `odpowiedzi`.`Pytania_id` = 1; 

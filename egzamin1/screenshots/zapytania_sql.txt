@@ -1,0 +1,6 @@
+Zapytanie 1: SELECT `id`,`nazwa`,`wystepowanie` FROM `ryby` WHERE `styl_zycia` = 1;
+Zapytanie 2: SELECT `Ryby_id`,`wymiar_ochronny` FROM `okres_ochronny` WHERE `wymiar_ochronny` < 30;
+
+Zapytanie 3: SELECT `ryby`.`nazwa`, `lowisko`.`akwen`, `lowisko`.`wojewodztwo` FROM `ryby` JOIN `lowisko` where `lowisko`.`Ryby_id` = `ryby`.`id` and `lowisko`.`rodzaj` = 3; 
+
+Zapytanie 4: ALTER TABLE `ryby` ADD `dobowy_limit` TINYINT UNSIGNED NOT NULL AFTER `styl_zycia`; 

@@ -1,0 +1,7 @@
+kw1: SELECT `nazwa`, `ilosc`, `producenci`.`nazwaProd` FROM `materialy` JOIN `producenci` WHERE `producenci`.`id` = `materialy`.`Producenci_id`; 
+
+kw2: SELECT `nazwa`, `producenci`.`nazwaProd`, `jednostki`.`nazwaJedn` FROM `materialy` JOIN `producenci`, `jednostki` WHERE `producenci`.`id` = `materialy`.`Producenci_id` AND `materialy`.`Jednostki_id` = `jednostki`.`id`;  
+
+kw3: CREATE USER 'zaopatrzenie'@'localhost' IDENTIFIED BY 'Z@op@trzenie';
+
+kw4: GRANT SELECT, INSERT, DELETE, UPDATE ON egz2.* TO 'zaopatrzenie'@'localhost';

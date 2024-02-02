@@ -1,0 +1,55 @@
+*{
+    font-family: Georgia;
+}
+
+header{
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+main{
+    background-color: lightblue;
+    padding: 100px;
+    
+    display: flex;
+    flex-flow: column;
+
+}
+
+#footer_left{
+    background-color: dodgerblue;
+    color: white;
+    width: 20%;
+    height: 220px;
+
+}
+
+#footer_central, #footer_right{
+    background-color: dodgerblue;
+    color: white;
+    width: 40%;
+    height: 220px;
+    text-align: center;
+    
+}
+
+a{
+    border-style: dashed;
+    border: 1px dimgray;
+    background-color: gold;
+    padding: 10px;
+    color: darkred;
+}
+
+footer{
+    display: flex;
+    flex-flow: row;
+}
+
+img{
+    height: 220px;
+}

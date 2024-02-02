@@ -1,0 +1,64 @@
+*{
+    font-family: Verdana;
+    text-align: center;
+}
+
+#baner{
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+
+}
+
+#lewy{
+    background-color: palegreen;
+    width: 30%;
+    height: 500px;
+
+}
+
+main{
+    display: flex;
+    flex-flow: row;
+}
+
+#prawy{
+    background-color: honeydew;
+    width: 70%;
+    height: 400px;
+    padding-top: 100px;
+}
+
+#stopka{
+    background-color: palegreen;
+    padding:  3px;
+}
+
+table, td{
+    border: solid 1px darkgreen;
+    border-collapse: collapse;
+
+}
+
+table{
+    margin: auto;
+    width: 95%;
+}
+
+td, th{
+    padding: 20px 0px 20px 0px;
+    
+}
+
+button{
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: honeydew;
+    color: darkgreen;
+}
+
+

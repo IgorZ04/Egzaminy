@@ -1,0 +1,7 @@
+kw1: SELECT `haslo` FROM `uzytkownicy` WHERE `login`='Justyna';
+
+kw2: SELECT COUNT(*) FROM `dane`; 
+
+kw3: SELECT `uzytkownicy`.`login`, `dane`.`rok_urodz`, `dane`.`przyjaciol`, `dane`.`hobby`, `dane`.`zdjecie` FROM `uzytkownicy` JOIN `dane` WHERE `uzytkownicy`.`id` = `dane`.`id` AND `uzytkownicy`.`login` = 'Justyna';
+
+kw4: ALTER TABLE `dane` ADD `stanowisko` VARCHAR(40) NOT NULL AFTER `zdjecie`; 
